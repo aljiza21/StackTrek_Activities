@@ -7,7 +7,7 @@ public class Main {
         String [] books = {"Harry Potter", "Narnia", "Diary ng Panget"};
         book.addBook(books);
 
-        System.out.println("-----------Display All Books-----------");
+        System.out.println("-----------List of Books-----------");
         book.viewBook();
 
 
