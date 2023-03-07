@@ -19,8 +19,12 @@ public class BookDatabase {
         }
     }
     public void viewBook(){
-        for (Map.Entry<Integer, String> entry : bookMap.entrySet()) {
-            System.out.println("Book " + entry.getKey() + ": " + entry.getValue());
+        if (bookMap.isEmpty()) {
+            System.out.println("No books in the database.");
+        } else {
+            for (Map.Entry<Integer, String> entry : bookMap.entrySet()) {
+                System.out.println("Book " + entry.getKey() + ": " + entry.getValue());
+            }
         }
     }
     public void removeBook(int bookId){
